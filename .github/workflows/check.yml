@@ -11,6 +11,7 @@ jobs:
       - name: Lint
         run: npm run lint
   tests:
+    needs: [lint]
     runs-on: macOS-latest
     steps:
       - name: Checkout
