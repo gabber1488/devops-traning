@@ -7,7 +7,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install deps
-        run: npm ci
+        run: npm i
       - name: Lint
         run: npm run lint
   tests:
@@ -16,6 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install deps
-        run: npm ci
+        run: npm i
       - name: Test
         run: npm run test
